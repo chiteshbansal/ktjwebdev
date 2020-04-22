@@ -3,10 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<title>Intro Page for Royal Fashion Hub</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Charm' rel='stylesheet'>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 	<!--<div class="tm-header">
@@ -14,17 +17,30 @@
 		Royal fashion Hub
 	</div>-->
 	<div class="back" id="back-to-top"> </div>
-	<div class="tm-nav" >
-		<img src="Images/logo.jpg" height="20px"class="logo">
-		<a href="#">Intro</a>
-		<a href="#link to launch section">Launching Soon</a>
-		<a href="#link to surprise section">Surprise Section</a>
-		<a href="#link to most bought section">Most Bought items</a>
-		<a href="#link to review">Reviews</a>
-		<a href="#link to add a review">Add a Review</a>
-		<a href="#link to footer">Footer</a>
-		<a href="https://www.google.com/intl/en_in/covid19/" target="_blank" class="covidadv">Covid-19<span class="message">Stay Home,Stay Safe!!</span></a>
+	<div class="tm-nav" id="mynav">
+		<div class="logoname">Royal Fashion Hub</div>
+		<a  href="#" class ="firsttype">Intro</a>
+		<a href="#link to launch section" class ="secondtype">Launching Soon</a>
+		<a href="#link to surprise section" class ="secondtype">Surprise Section</a>
+		<a href="#link to most bought section" class ="secondtype">Most Bought items</a>
+		<a  class ="firsttype" href="#link to review">Reviews</a>
+		<a href="#link to add a review" class ="secondtype">Add a Review</a>
+		<a href="#link to footer" class ="firsttype">Footer</a>
+		<a  class ="secondtype" href="https://www.google.com/intl/en_in/covid19/" target="_blank" class="covidadv">Covid-19</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
 	</div>
+
+	<script>
+		function myFunction() {
+  var x = document.getElementById("mynav");
+  if (x.className === "tm-nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "tm-nav";
+  }
+}
+	</script>
+	
 	<div class="column2" >
 		<div class="companyname">Royal Fashion Hub</div>
 		<div class="moto">......A Style For Every Story........</div>
@@ -37,10 +53,8 @@
 				<li>T-shirt</li>
 				<li>Trousers</li>
 				<li>Watches</li>
-				<li>Footwears</li>
 				<li>Electronic Gadgets</li>
 				<li>Lowers</li>
-				<li>Partywear</li>
 				<li>Gym vest</li>
 				<li>Denim jeans</li>
 				<li>Shirts</li>
@@ -54,10 +68,10 @@
 		<div class="column21" id="link to launch section">
 
 			<div class="launch"><h3>Launching Soon</h3></div>
-			<img src="Images/object2.jpg" width="300px" height="250px" class="object2">
-			<img src="Images/object1.jpg" width="300px" height="250px"class="object1">
-			<img src="Images/object3.jpg" width="300px" height="250px"class="object3">
-			<img src="Images/object4.jpg" width="300px" height="250px"class="object4">
+			<div class="img-box"><img src="Images/object2.jpg" width="300px" height="250px" class="object2"></div>
+			<div class="img-box"><img src="Images/object1.jpg" width="300px" height="250px"class="object1"></div>
+			<div class="img-box"><img src="Images/object3.jpg" width="300px" height="250px" class="object2"></div>
+			<div class="img-box"><img src="Images/object4.jpg" width="300px" height="250px"class="object1"></div>
 			<div class="discription">Get Ready for our exclusive products from various brands.Limited stock!! Great Quality !! Preorder now	<div class="orderbutton">Order Now </div></div>
 		</div>
 
@@ -494,7 +508,7 @@
 	</div>
 
 	<div class="footer-section" id="link to footer">
-		<img src="Images/logo.jpg" height="80px" class="logo2">
+		<div class="logo2">	<img src="Images/logo.jpg" height="100px" width="100" ></div>
 		<div class="footer-content">&copy;copyrights 2020 Royal Fashion hub, Inc.</div>
 
 		<div class="footer-right">
